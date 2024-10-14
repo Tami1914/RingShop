@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('rings/create', function () {
+    return view('create');
+});
+
 Route::resource('rings', RingController::class);
 
 Route::delete('rings/$ring', [RingController::class, 'destroy']);

@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+<link rel="stylesheet" href="/css/createStyles.css">
     <h1>Create a new Ring</h1>
     <form method="POST" action="{{ route('rings.store') }}">
         @csrf
