@@ -1,9 +1,12 @@
 <html>
     <head>
-        <tittle>Rings</tittle>
+        <link rel="stylesheet" href="/css/createStyles.css">
+        <tittle></tittle>
     </head>
     <body>
-        <h1>Rings App</h1>
+        <div class="header-container">
+            <h1>Rings App</h1>
+        </div>
 
         <div class="container">
             @yield('content')

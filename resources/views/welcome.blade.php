@@ -8,14 +8,23 @@
     <title>Rings Shop</title>
 </head>
 <body>
-    <h1>Rings Shop</h1>
-    <h2>Jewelry of all styles designed for you</h2>
-    <ul>
-        <li><a href="rings/create">Go to Create a Ring</a></li>
-        <li><a href="rings">Go to Ring List</a></li>
-    </ul>
-    <div class="image-container">
-        <img src="./images/home_rings.png" alt="HomeRings">
+    
+    <div class="header-container">
+        <h1>Rings Shop</h1>
     </div>
+
+    <div class="header-options-container">
+        <a href="rings/create" class="options">Go to Create a Ring</a>
+        <a href="rings" class="options">Go to Ring List</a>
+    </div>
+
+    <div class="home-subtittle-container">
+        <h2>Jewelry of all styles designed for you</h2>
+    </div>
+
+    <div class="image-container">
+        <img src="./images/home_rings.png" alt="HomeRings" class="home-image">
+    </div>
+
 </body>
 </html>

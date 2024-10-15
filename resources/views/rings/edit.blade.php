@@ -7,20 +7,25 @@
     <title>Ring Shop</title>
 </head>
 <body>
-    <h1>Edit Form</h1>
+    
+    <div class="header-container">
+        <h1>Edit Form</h1>
+    </div>
 
-    <form method="POST" action="{{ route('rings.update', $ring) }}">
-        @csrf @method('PATCH') 
-        <div class="form-group">
-            <label for="diameter">Diameter</label>
-            <input type="text" name="diameter" class="form-control" id="diameter" placeholder="Enter ring diameter" value="{{ old('diameter', $ring->diameter) }}">
-        </div>
-        <div class="form-group">
-            <label for="material">Material</label>
-            <input type="text" name="material" class="form-control" id="material" placeholder="Enter ring material" value="{{ old('material', $ring->material) }}">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <div class="form-container">
+        <form method="POST" action="{{ route('rings.update', $ring) }}">
+            @csrf @method('PATCH') 
+            <div class="form-group">
+                <label for="diameter">Diameter</label>
+                <input type="text" name="diameter" class="form-control" id="diameter" placeholder="Enter ring diameter" value="{{ old('diameter', $ring->diameter) }}">
+            </div>
+            <div class="form-group">
+                <label for="material">Material</label>
+                <input type="text" name="material" class="form-control" id="material" placeholder="Enter ring material" value="{{ old('material', $ring->material) }}">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 
 </body>
 </html>
