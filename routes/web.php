@@ -7,14 +7,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('rings/create', function () {
-    return view('create');
-});
-
 Route::resource('rings', RingController::class);
 
-Route::delete('rings/$ring', [RingController::class, 'destroy']);
 
-Route::get('rings/{ring}/edit', [RingController::class, 'edit'])->name('rings.edit');
+// Route::get('rings/create', function () {
+//     return view('create');
+// });
 
-Route::patch('rings/{ring}', [RingController::class, 'update'])->name('rings.update');
+// Route::delete('rings/$ring', [RingController::class, 'destroy']);
+
+// Route::get('rings/{ring}/edit', [RingController::class, 'edit'])->name('rings.edit');
+
+// Route::patch('rings/{ring}', [RingController::class, 'update'])->name('rings.update');

@@ -14,10 +14,19 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #272829;
+    color: white;
 }
 
 .header-container h1{
     color: white;
+}
+
+.header-title-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 .header-options-container{
@@ -41,42 +50,16 @@ body{
     border-radius: 5em;
 }
 
-.header-title-container{
+.ring-list-container{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 1em;
-}
-
-.form-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    padding-top: 1em;
 }
 
 .form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 40vw;
-    height: 20vw;
-    border-radius: 1em;
-    background-color: #D8D9DA;
-}
-
-.form-group{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.btn{
-    background-color: #272829;
-    color: white;
-    border-radius: 2em;
+    background-color: black;
 }

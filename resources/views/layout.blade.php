@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="header-container">
-            <h1>Rings App</h1>
+            <h1>Rings Shop</h1>
         </div>
 
         <div class="container">
