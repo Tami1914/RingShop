@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -19,6 +22,7 @@ body{
 
 .header-container h1{
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 .header-title-container{
@@ -26,7 +30,8 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding-top: 1em;
+    font-family: "Roboto", sans-serif;
 }
 
 .header-options-container{
@@ -37,6 +42,7 @@ body{
     align-items: center;
     gap: 15em;
     background-color: #61677A;
+    font-family: "Roboto", sans-serif;
 }
 
 .options{
@@ -60,6 +66,81 @@ body{
     padding-top: 1em;
 }
 
-.form{
-    background-color: black;
+.form-container{
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #61677A;
+    border-radius: 1em;
+    padding: 1em;
+    font-family: "Roboto", sans-serif;
+}
+
+.item-container{
+    display: flex;
+    width: 20vw;
+    background-color: #272829;
+    gap: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.item-list-container{
+    background-color: #272829;
+}
+
+.item-list{
+    list-style: none;
+    color: #FFFf;
+    padding: 0.5em;
+}
+
+.item-edit-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-edit{
+    display: flex;
+    width: 5vw;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007efb;
+    border-radius: 1em;
+}
+
+.item-edit:hover{
+    background-color: #5da8f3;
+}
+
+.item-delete-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-delete{
+    display: flex;
+    width: 5vw;
+    height: 2vw;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    border-radius: 1em;
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.item-delete:hover{
+    background-color: rgb(223, 83, 83);
 }

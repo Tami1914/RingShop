@@ -23,7 +23,10 @@
     </div>
 
     <div class="image-container">
-        <img src="./images/home_rings.png" alt="HomeRings" class="home-image">
+        <img src="./images/home_rings1.png" alt="HomeRings1" class="home-image">
+        <img src="./images/home_rings2.png" alt="HomeRings2" class="home-image">
+        <img src="./images/home_rings3.png" alt="HomeRings3" class="home-image">
+        <img src="./images/home_rings4.png" alt="HomeRings4" class="home-image">
     </div>
 
 </body>

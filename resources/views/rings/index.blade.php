@@ -23,15 +23,23 @@
     </div>
 
     <ul class="ring-list-container">
-        @foreach ($rings as $ring)
-            <li>{{ $ring->diameter }} {{ $ring->material }}</li>
-            <a href="{{ route('rings.edit', $ring) }}">Edit</a>
-            <form action="{{route('rings.destroy', $ring)}}" method="POST" class="form">
-                @csrf
-                @method('DELETE')
-                <button type="submit">Delete</button>
-            </form>
-        @endforeach
+        <div class="form-container">
+            @foreach ($rings as $ring)
+                <div class="item-container">
+                    <div>
+                        <li class="item-list">Diameter:  {{ $ring->diameter }}</li><li class="item-list">Material:  {{ $ring->material }}</li>
+                    </div>
+                    <div class="item-edit-container">
+                        <a class="item-edit" href="{{ route('rings.edit', $ring) }}">Edit</a>
+                    </div>
+                    <form action="{{route('rings.destroy', $ring)}}" method="POST" class="item-delete-container">
+                         @csrf
+                         @method('DELETE')
+                            <button type="submit" class="item-delete">Delete</button>
+                    </form>
+                </div>
+            @endforeach
+        </div>
     </ul>
 </body>
 
